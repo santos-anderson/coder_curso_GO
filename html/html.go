@@ -1,5 +1,10 @@
 package html
 
+import (
+	"io/ioutil"
+	"net/http"
+	"regexp"
+)
 
 //Titulo obtem o titulo de uma pagina html
 func Titulo(urls ...string) <-chan string{
